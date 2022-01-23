@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorActivity">
+
+    <ImageView
+        android:id="@+id/suivantBtn"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nxtbtn" />
+
+    <ImageView
+        android:id="@+id/precedentBtn"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/suivantBtn"
+        app:srcCompat="@drawable/precbtn" />
+
+    <ImageView
+        android:id="@+id/menuBtn"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageThing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backbtn" />
+
+    <ImageView
+        android:id="@+id/sondBtn"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageThing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/voixBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/voixbtn" />
+
+    <ImageView
+        android:id="@+id/voixBtn"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/menuBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sondbtn" />
+
+    <ImageView
+        android:id="@+id/imageThing"
+        android:layout_width="388dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voixBtn"
+        app:srcCompat="@drawable/hamama" />
+
+    <TextView
+        android:id="@+id/textThing"
+        android:layout_width="281dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageThing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
